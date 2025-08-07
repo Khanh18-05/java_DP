@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="presentation.OrderAddController" spacing="10">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Add New Order" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <TextField fx:id="orderIdField" promptText="Order ID" />
+    <TextField fx:id="totalAmountField" promptText="Total Amount" />
+
+    <ComboBox fx:id="orderTypeComboBox">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="regular" />
+                <String fx:value="express" />
+                <String fx:value="international" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <TextField fx:id="extraFeeField" promptText="Rush/Customs Fee (if any)" />
+
+    <Button text="Add Order" onAction="#onAddOrder" />
+</VBox>

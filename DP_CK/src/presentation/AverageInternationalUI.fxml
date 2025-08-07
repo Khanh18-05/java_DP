@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="presentation.AverageInternationalController" spacing="10">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Trung bình Tổng giá trị Đơn hàng Quốc tế" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+    <Label fx:id="resultLabel" style="-fx-font-size: 14px;" />
+</VBox>

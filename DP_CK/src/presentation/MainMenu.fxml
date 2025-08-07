@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="presentation.MainMenuController" spacing="15">
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <Label text="Order Management System" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <Button text="➕ Add Order" onAction="#onAddOrder"/>
+    <Button text="📝 Edit Order" onAction="#onEditOrder"/>
+    <Button text="🗑️ Delete Order" onAction="#onDeleteOrder"/>
+    <Button text="📋 View All Orders" onAction="#onViewOrders"/>
+    <Button text="🔍 Search Order" onAction="#onSearchOrder"/>
+    <Button text="📊 Count Orders by Type" onAction="#onCountOrders"/>
+    <Button text="🚚 Đơn hàng Ship ≥ 15$" onAction="#onHighShippingOrders"/>
+    <Button text="🌍 Trung bình đơn quốc tế" onAction="#onAvgInternational"/>
+
+
+    <Button text="❌ Exit" onAction="#onExit"/>
+</VBox>
